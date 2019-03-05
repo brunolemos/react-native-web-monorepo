@@ -1,5 +1,31 @@
 {
   "name": "web",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-art": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-native-web": "^0.10.0",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "babel-plugin-react-native-web": "^0.10.0",
+    "react-app-rewired": "^2.1.0"
+  }
 }
