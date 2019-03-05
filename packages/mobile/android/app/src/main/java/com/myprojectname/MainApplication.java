@@ -27,9 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     }
 
     @Override
-    protected String getJSMainModuleName() {
-      return "index";
-    }
+    protected String getJSMainModuleName() { return "packages/mobile/index"; }
   };
 
   @Override
