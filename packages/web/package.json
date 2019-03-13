@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "react": "^16.8.3",
-    "react-art": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-native-web": "^0.10.0",
-    "react-scripts": "2.1.5"
+    "react": "^16.8.4",
+    "react-art": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-native-web": "^0.11.0",
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -25,7 +25,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-react-native-web": "^0.10.0",
-    "react-app-rewired": "^2.1.0"
+    "babel-plugin-react-native-web": "^0.11.0",
+    "react-app-rewired": "^2.1.1"
   }
 }
