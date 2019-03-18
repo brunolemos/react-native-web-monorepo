@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "react": "^16.8.4",
-    "react-art": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-native-web": "^0.11.0",
+    "react": "16.8.4",
+    "react-art": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-native-web": "0.11.1",
     "react-scripts": "2.1.8"
   },
   "scripts": {
