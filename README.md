@@ -39,7 +39,7 @@ Follow me on Twitter: [@brunolemos](https://twitter.com/brunolemos)<br/>
 ## Who is using this on production
 
 Check out [DevHub](https://github.com/devhubapp/devhub).
-The main differences are that it shares TypeScript code instead of JavaScript and also supports Desktop in addition to Web, iOS and Android.
+The main difference is that it supports Desktop (Electron) in addition to Web, iOS and Android.
 
 ![DevHub Desktop](https://user-images.githubusercontent.com/619186/57279337-28d95500-707f-11e9-9b2b-60c1af41277a.jpg)
 

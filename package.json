@@ -6,5 +6,12 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "16.8.19",
+    "@types/react-native": "0.57.60",
+    "concurrently": "4.1.0",
+    "typescript": "3.5.1"
   }
 }

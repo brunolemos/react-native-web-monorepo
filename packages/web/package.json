@@ -10,8 +10,13 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "compile": "tsc -b",
+    "prestart": "npm run compile",
+    "start": "concurrently \"npm run compile -- -w\" \"npm run _start\"",
+    "_start": "react-app-rewired start",
+    "prebuild": "npm run compile",
     "build": "react-app-rewired build",
+    "pretest": "npm run compile",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
@@ -26,6 +31,8 @@
   ],
   "devDependencies": {
     "babel-plugin-react-native-web": "^0.11.0",
-    "react-app-rewired": "^2.1.1"
+    "concurrently": "*",
+    "react-app-rewired": "^2.1.1",
+    "typescript": "*"
   }
 }
