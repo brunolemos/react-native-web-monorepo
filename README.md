@@ -8,18 +8,25 @@ This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-
 
 ### How to run
 
+_Requirements: [React Native](https://facebook.github.io/react-native/docs/getting-started.html#native)_
+
   - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
   - `$ cd react-native-web-monorepo`
   - `$ yarn`
   - `$ yarn workspace mobile start`
   - Run the project
-    - Via Xcode / Android Studio
-      - Open Xcode / Android Studio and press the Run button
+    - [iOS] Via Xcode
+      - `open packages/mobile/ios/myprojectname.xcodeproj` (open the project on Xcode)
+      - Press the Run button
+    - [Android] Via Android Studio
+      - `studio ./packages/mobile/android/` (open the project on Android Studio)
+      - Press the Run button
     - Via CLI
       -  _Open a new terminal tab_
       - `$ cd packages/mobile`
       - `$ npm un -g react-native-cli`
       - `$ npm i -g @react-native-community/cli`
+      - _You may need to launch your device emulator before the next command_
       - `$ react-native run-ios` or `react-native run-android`
 
 ### Author
@@ -34,15 +41,14 @@ Follow me on Twitter: [@brunolemos](https://twitter.com/brunolemos)<br/>
 Check out [DevHub](https://github.com/devhubapp/devhub).
 The main differences are that it shares TypeScript code instead of JavaScript and also supports Desktop in addition to Web, iOS and Android.
 
-![DevHub Desktop](https://user-images.githubusercontent.com/619186/53792356-4452a300-3f0a-11e9-9aea-bdc7e54bad95.jpg)
+![DevHub Desktop](https://user-images.githubusercontent.com/619186/57279337-28d95500-707f-11e9-9b2b-60c1af41277a.jpg)
 
-![DevHub Menubar](https://user-images.githubusercontent.com/619186/52375458-d9b36200-2a46-11e9-9a50-431293de7fa6.jpg)
+![DevHub Menubar](https://github.com/devhubapp/devhub/blob/master/assets/static/menubar-co.jpg)
 
 <p align="center">
-  <img alt="DevHub Mobile - Notifications" height="460" src="https://user-images.githubusercontent.com/619186/52172527-5cdb6c00-2758-11e9-9f2c-d7c28b523045.png" />
-  <img alt="DevHub Mobile - Notification Filters" height="460" src="https://user-images.githubusercontent.com/619186/52172528-5cdb6c00-2758-11e9-9072-4ae96c3c1795.png" />
-  <img alt="DevHub Mobile - Events" height="460" src="https://user-images.githubusercontent.com/619186/52172529-5cdb6c00-2758-11e9-999e-322f67d44fe1.png" />
-  <img alt="DevHub Mobile - Event Filters" height="460" src="https://user-images.githubusercontent.com/619186/52172530-5cdb6c00-2758-11e9-86cf-291a30c37c96.png" />
+  <img alt="DevHub Mobile - Notifications" height="620" src="https://user-images.githubusercontent.com/619186/57279347-2f67cc80-707f-11e9-8457-e892ff1f57c0.png" />
+  <img alt="DevHub Mobile - Notification Filters" height="620" src="https://user-images.githubusercontent.com/619186/57279348-2f67cc80-707f-11e9-8804-073b5d88a4cd.png" />
+  <img alt="DevHub Mobile - Events" height="620" src="https://user-images.githubusercontent.com/619186/57279349-30006300-707f-11e9-9edc-283fea7785a4.png" />
 </p>
 
 <br/>
