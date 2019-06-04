@@ -7,6 +7,9 @@
       "packages/*"
     ]
   },
+  "resolutions": {
+    "**/**/fsevents": "^1.2.9"
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/react": "16.8.19",
