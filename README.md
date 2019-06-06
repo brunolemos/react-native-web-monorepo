@@ -13,6 +13,7 @@ _Requirements: [React Native](https://facebook.github.io/react-native/docs/getti
   - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
   - `$ cd react-native-web-monorepo`
   - `$ yarn`
+  - `$ yarn workspace web start`
   - `$ yarn workspace mobile start`
   - Run the project
     - [iOS] Via Xcode
