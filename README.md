@@ -28,7 +28,7 @@ _Requirements: [React Native](https://facebook.github.io/react-native/docs/getti
       - `$ npm un -g react-native-cli`
       - `$ npm i -g @react-native-community/cli`
       - _You may need to launch your device emulator before the next command_
-      - `$ react-native run-ios` or `react-native run-android`
+      - `$ yarn workspace mobile react-native run-ios` or `$ yarn workspace mobile react-native run-android`
 
 ### Author
 
