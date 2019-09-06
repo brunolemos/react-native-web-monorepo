@@ -6,6 +6,10 @@
     "emitDeclarationOnly": true,
     "isolatedModules": false,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "typeRoots": [
+      "@types",
+      "../../node_modules/@types"
+    ]
   }
 }

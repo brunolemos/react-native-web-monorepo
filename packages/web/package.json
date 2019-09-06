@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "react": "16.8.4",
-    "react-art": "16.8.4",
-    "react-dom": "16.8.4",
-    "react-native-web": "0.11.1",
-    "react-scripts": "2.1.8"
+    "react": "16.9.0",
+    "react-art": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-native-web": "0.11.7",
+    "react-scripts": "3.1.1"
   },
   "scripts": {
     "compile": "tsc -b",
     "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile -- -w\" \"npm run _start\"",
+    "start": "concurrently \"npm run compile -- -w --incremental\" \"npm run _start\"",
     "_start": "react-app-rewired start",
     "prebuild": "npm run compile",
     "build": "react-app-rewired build",
@@ -30,9 +30,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-react-native-web": "^0.11.0",
-    "concurrently": "*",
-    "react-app-rewired": "^2.1.1",
-    "typescript": "*"
+    "babel-plugin-react-native-web": "0.11.7",
+    "concurrently": "4.1.2",
+    "react-app-rewired": "2.1.3",
+    "typescript": "3.6.2"
   }
 }
