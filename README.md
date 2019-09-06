@@ -3,7 +3,7 @@
 
 This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-100-code-sharing-between-ios-android--web-using-react-native-web-andmonorepo-4pej).
 
-![article-cover](https://user-images.githubusercontent.com/619186/53903807-69870480-4023-11e9-95bc-98caaca01445.jpg)
+![article-cover](https://user-images.githubusercontent.com/619186/64462961-a1f1c300-d0d8-11e9-872c-cadf68bd1b02.jpg)
 
 
 ### How to run
@@ -13,22 +13,18 @@ _Requirements: [React Native](https://facebook.github.io/react-native/docs/getti
   - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
   - `$ cd react-native-web-monorepo`
   - `$ yarn`
+  - `$ cd packages/mobile/ios && pod install && cd -`
   - `$ yarn workspace web start`
   - `$ yarn workspace mobile start`
-  - Run the project
+  - Run the mobile app
+    - Via CLI
+      - `$ yarn workspace mobile react-native run-ios` or `yarn workspace mobile react-native run-android`
     - [iOS] Via Xcode
-      - `open packages/mobile/ios/myprojectname.xcodeproj` (open the project on Xcode)
+      - `yarn workspace mobile xcode`
       - Press the Run button
     - [Android] Via Android Studio
-      - `studio ./packages/mobile/android/` (open the project on Android Studio)
+      - `yarn workspace mobile studio`
       - Press the Run button
-    - Via CLI
-      -  _Open a new terminal tab_
-      - `$ cd packages/mobile`
-      - `$ npm un -g react-native-cli`
-      - `$ npm i -g @react-native-community/cli`
-      - _You may need to launch your device emulator before the next command_
-      - `$ react-native run-ios` or `react-native run-android`
 
 ### Author
 
@@ -42,14 +38,14 @@ Follow me on Twitter: [@brunolemos](https://twitter.com/brunolemos)<br/>
 Check out [DevHub](https://github.com/devhubapp/devhub).
 The main difference is that it supports Desktop (Electron) in addition to Web, iOS and Android.
 
-![DevHub Desktop](https://user-images.githubusercontent.com/619186/57279337-28d95500-707f-11e9-9b2b-60c1af41277a.jpg)
+![DevHub Desktop](https://user-images.githubusercontent.com/619186/63945240-59d40000-ca49-11e9-98c1-353225f8dcf6.jpg)
 
-![DevHub Menubar](https://github.com/devhubapp/devhub/blob/master/assets/static/menubar-co.jpg)
+![DevHub Menubar](https://user-images.githubusercontent.com/619186/64462861-56d7b000-d0d8-11e9-8a8a-0eb085f248a0.jpg)
 
 <p align="center">
-  <img alt="DevHub Mobile - Notifications" height="620" src="https://user-images.githubusercontent.com/619186/57279347-2f67cc80-707f-11e9-8457-e892ff1f57c0.png" />
-  <img alt="DevHub Mobile - Notification Filters" height="620" src="https://user-images.githubusercontent.com/619186/57279348-2f67cc80-707f-11e9-8804-073b5d88a4cd.png" />
-  <img alt="DevHub Mobile - Events" height="620" src="https://user-images.githubusercontent.com/619186/57279349-30006300-707f-11e9-9edc-283fea7785a4.png" />
+  <img alt="DevHub Mobile - Notifications" height="620" src="https://user-images.githubusercontent.com/619186/64462897-78d13280-d0d8-11e9-92fd-4df3344d4312.jpg" />
+  <img alt="DevHub Mobile - Notification Filters" height="620" src="https://user-images.githubusercontent.com/619186/64462909-7ff84080-d0d8-11e9-8a43-390be77644c9.jpg" />
+  <img alt="DevHub Mobile - Repository activity" height="620" src="https://user-images.githubusercontent.com/619186/64462915-81c20400-d0d8-11e9-85eb-8322be20671c.jpg" />
 </p>
 
 <br/>
