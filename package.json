@@ -7,11 +7,20 @@
       "packages/*"
     ]
   },
-  "dependencies": {},
+  "scripts": {
+    "android": "yarn workspace mobile android",
+    "compile": "tsc -b --incremental",
+    "ios": "yarn workspace mobile  ios",
+    "studio": "yarn workspace mobile studio",
+    "xcode": "yarn workspace mobile xcode"
+  },
+  "dependencies": {
+    "react-native": "0.61.0-rc.3"
+  },
   "devDependencies": {
-    "@types/react": "16.8.19",
-    "@types/react-native": "0.57.60",
-    "concurrently": "4.1.0",
-    "typescript": "3.5.1"
+    "@types/react": "16.9.2",
+    "@types/react-native": "0.60.8",
+    "concurrently": "4.1.2",
+    "typescript": "3.6.2"
   }
 }
