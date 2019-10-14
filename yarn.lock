@@ -5088,10 +5088,10 @@ he@1.2.x:
   resolved "https://registry.npmjs.org/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-hermes-engine@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/hermes-engine/-/hermes-engine-0.1.1.tgz#33d5da1a3b7289667f121dc1aca3566171e86fd8"
-  integrity sha512-5nPNtJg3ZiUT14SfU5KcETWrDFadn9R0hv2FCihiLZUeNHuLxaoiFy0bAMrXukKPyXG76XZ4zl5iGXr7E7Nhpw==
+hermes-engine@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npmjs.org/hermes-engine/-/hermes-engine-0.2.1.tgz#25c0f1ff852512a92cb5c5cc47cf967e1e722ea2"
+  integrity sha512-eNHUQHuadDMJARpaqvlCZoK/Nitpj6oywq3vQ3wCwEsww5morX34mW5PmKWQTO7aU0ck0hgulxR+EVDlXygGxQ==
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
@@ -9134,10 +9134,10 @@ react-native-web@0.11.7:
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.4"
 
-react-native@0.61.0-rc.3:
-  version "0.61.0-rc.3"
-  resolved "https://registry.npmjs.org/react-native/-/react-native-0.61.0-rc.3.tgz#880b1ca4805fe5095a506306461c38cf4e74452d"
-  integrity sha512-1jG098scd2vBXx2vZYpsrdX7dfmO8bSMJq+eB52x6RWmr70c8Zy7VUNpgndB6EEjthDUEfkcZmBHbkmuSEfzvg==
+react-native@0.61.2:
+  version "0.61.2"
+  resolved "https://registry.npmjs.org/react-native/-/react-native-0.61.2.tgz#987b91b063557f8ebec803fdfea2044a24bdbe4d"
+  integrity sha512-hhd8bYbkkZYHoOndxUwbjJ6Yd9HFn5PvwqqS41uJ1xADdw44rx/svuwmJNA1RKF7jH74uR2jpBViWYGd36zGyg==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@react-native-community/cli" "^3.0.0-alpha.1"
@@ -9152,7 +9152,7 @@ react-native@0.61.0-rc.3:
     event-target-shim "^5.0.1"
     fbjs "^1.0.0"
     fbjs-scripts "^1.1.0"
-    hermes-engine "^0.1.1"
+    hermes-engine "^0.2.1"
     invariant "^2.2.4"
     jsc-android "^245459.0.0"
     metro-babel-register "^0.56.0"
