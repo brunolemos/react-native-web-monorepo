@@ -36,8 +36,11 @@ const replaceInFile = (from, to) => {
       to: to
     };
     replace(options)
-      .then(changedFiles => {
-        if (changedFiles) {
+      .then(results => {
+        if (results) {
+         const changedFiles = results
+            .filter(result => result.hasChanged)
+            .map(result => result.file);
           console.log(
             "[replaceInFile] Modified files: \n",
             changedFiles.join("\n")
