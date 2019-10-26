@@ -12,7 +12,8 @@
     "compile": "tsc -b --incremental",
     "ios": "yarn workspace mobile  ios",
     "studio": "yarn workspace mobile studio",
-    "xcode": "yarn workspace mobile xcode"
+    "xcode": "yarn workspace mobile xcode",
+    "rename" : "node bin/rename.js"
   },
   "dependencies": {
     "react-native": "0.61.2"
@@ -21,6 +22,7 @@
     "@types/react": "16.9.2",
     "@types/react-native": "0.60.8",
     "concurrently": "4.1.2",
+    "replace-in-file": "^4.2.0",
     "typescript": "3.6.2"
   }
 }
