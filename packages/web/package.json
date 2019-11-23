@@ -30,9 +30,15 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-react-native-web": "0.12.1",
     "concurrently": "5.1.0",
     "react-app-rewired": "2.1.5",
     "typescript": "3.7.5"
+  },
+  "jest": {
+    "preset": "react-native-web"
   }
 }
