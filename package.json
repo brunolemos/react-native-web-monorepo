@@ -12,6 +12,7 @@
     "compile": "tsc -b --incremental",
     "ios": "yarn workspace mobile  ios",
     "studio": "yarn workspace mobile studio",
+    "test": "yarn workspaces run test",
     "xcode": "yarn workspace mobile xcode"
   },
   "devDependencies": {

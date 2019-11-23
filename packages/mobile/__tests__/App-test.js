@@ -1,15 +1,14 @@
-/**
- * @format
- */
-
-import 'react-native';
 import React from 'react';
+import '@testing-library/jest-native/extend-expect';
+import {render, waitForElement} from '@testing-library/react-native';
 
 import {App} from 'components/src/App';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+test('Renders the shared app', async () => {
+  const {getByText, baseElement} = render(<App />);
+  const theText = 'Code sharing using Monorepo';
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+  await waitForElement(() => getByText(theText));
+  expect(getByText(theText)).toHaveTextContent(theText);
+  expect(baseElement).toMatchSnapshot();
 });

@@ -2,6 +2,9 @@
   "name": "components",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
   "dependencies": {
     "react": "16.12.0",
     "react-native": "0.61.5"
