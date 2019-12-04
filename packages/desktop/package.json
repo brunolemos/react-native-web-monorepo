@@ -1,0 +1,95 @@
+{
+  "name": "desktop",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "auto-launch": "^5.0.5",
+    "electron-is-dev": "^1.1.0",
+    "electron-serve": "^0.4.0",
+    "electron-window-state": "^5.0.3"
+  },
+  "scripts": {
+    "compile": "tsc -b",
+    "prestart": "yarn compile && node info.js",
+    "start": "concurrently \"yarn compile -- -w --incremental\" \"yarn _start\"",
+    "_start": "concurrently \"cross-env BROWSER=none yarn --cwd ../web start\" \"wait-on http://localhost:3000 && run-electron ../web/public/electron.js\"",
+    "prebuild": "yarn compile && node info.js && yarn --cwd ../web add link:./../desktop && yarn --cwd ../web build",
+    "build": "yarn _build",
+    "_build": "electron-builder -c.extraMetadata.main=build/electron.js",
+    "postbuild": "yarn --cwd ../web remove desktop",
+    "pretest": "yarn compile",
+    "test": "jest"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "concurrently": "5.0.0",
+    "cross-env": "^6.0.3",
+    "electron": "^7.1.2",
+    "electron-builder": "^21.2.0",
+    "electron-devtools-installer": "^2.2.4",
+    "fs-extra": "^8.1.0",
+    "run-electron": "^1.0.0",
+    "spectron": "^9.0.0",
+    "typescript": "3.7.2",
+    "wait-on": "^3.3.0"
+  },
+  "build": {
+    "productName": "desktop",
+    "appId": "com.example.your.app",
+    "electronVersion": "7.1.2",
+    "buildVersion": "${version}",
+    "asar": true,
+    "directories": {
+      "app": "../web",
+      "output": "release"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg",
+      "icon": "../web/build/icon.icns"
+    },
+    "dmg": {
+      "iconSize": 128,
+      "icon": "../web/build/icon.icns",
+      "title": "${productName}",
+      "window": {
+        "width": 600,
+        "height": 400
+      },
+      "contents": [
+        {
+          "x": 400,
+          "y": 250,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 170,
+          "y": 250,
+          "type": "file"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "desktop": {
+        "Name": "${productName}",
+        "Comment": "desktop app",
+        "Categories": "Utilities;"
+      },
+      "icon": "../web/build/icon.png"
+    },
+    "win": {
+      "publisherName": "you",
+      "target": "nsis",
+      "icon": "../web/build/icon.ico"
+    }
+  }
+}

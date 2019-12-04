@@ -9,7 +9,10 @@
 /coverage
 
 # production
+**.map
 /build
+/public/*.js
+**info.json
 
 # misc
 .DS_Store

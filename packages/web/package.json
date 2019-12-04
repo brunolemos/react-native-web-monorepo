@@ -1,22 +1,30 @@
 {
   "name": "web",
   "version": "0.0.1",
+  "author": {
+    "name": "First Last",
+    "email": "username@domain.ext"
+  },
+  "copyright": "Copyright © 2019 You",
+  "homepage": "./",
+  "description": "A small description of desktop app",
   "private": true,
   "dependencies": {
-    "react": "16.9.0",
-    "react-art": "16.9.0",
-    "react-dom": "16.9.0",
+    "react": "16.12.0",
+    "react-art": "16.12.0",
+    "react-dom": "16.12.0",
     "react-native-web": "0.11.7",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.2.0",
+    "webpack": "4.41.2"
   },
   "scripts": {
     "compile": "tsc -b",
-    "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile -- -w --incremental\" \"npm run _start\"",
+    "prestart": "yarn compile",
+    "start": "concurrently \"yarn compile -- -w --incremental\" \"yarn _start\"",
     "_start": "react-app-rewired start",
-    "prebuild": "npm run compile",
+    "prebuild": "yarn compile",
     "build": "react-app-rewired build",
-    "pretest": "npm run compile",
+    "pretest": "yarn compile",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
@@ -32,7 +40,7 @@
   "devDependencies": {
     "babel-plugin-react-native-web": "0.11.7",
     "concurrently": "5.0.0",
-    "react-app-rewired": "2.1.4",
-    "typescript": "3.6.4"
+    "react-app-rewired": "2.1.5",
+    "typescript": "3.7.2"
   }
 }
