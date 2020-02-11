@@ -15,12 +15,9 @@
     "xcode": "yarn workspace mobile xcode"
   },
   "dependencies": {
-    "react-native": "0.61.5"
+    "react-native": "*"
   },
   "devDependencies": {
-    "@types/react": "16.9.11",
-    "@types/react-native": "0.60.22",
-    "concurrently": "5.0.0",
-    "typescript": "3.6.4"
+    "typescript": "3.7.5"
   }
 }
