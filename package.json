@@ -15,7 +15,7 @@
     "xcode": "yarn workspace mobile xcode"
   },
   "dependencies": {
-    "react-native": "0.61.3"
+    "react-native": "0.61.5"
   },
   "devDependencies": {
     "@types/react": "16.9.11",
