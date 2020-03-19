@@ -14,9 +14,6 @@
     "studio": "yarn workspace mobile studio",
     "xcode": "yarn workspace mobile xcode"
   },
-  "dependencies": {
-    "react-native": "*"
-  },
   "devDependencies": {
     "typescript": "3.7.5"
   }
