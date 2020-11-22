@@ -2,15 +2,9 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "noEmit": true,
-    "typeRoots": [
-      "@types",
-      "../../node_modules/@types"
-    ]
+    "typeRoots": ["@types", "../../node_modules/@types"]
   },
-  "include": [
-    "index.js",
-    "src"
-  ],
+  "include": ["index.js", "src"],
   "references": [
     {
       "path": "../components"
