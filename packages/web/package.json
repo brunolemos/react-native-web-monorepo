@@ -10,13 +10,8 @@
     "react-scripts": "3.3.1"
   },
   "scripts": {
-    "compile": "tsc -b",
-    "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile -- -w --incremental\" \"npm run _start\"",
-    "_start": "react-app-rewired start",
-    "prebuild": "npm run compile",
+    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "pretest": "npm run compile",
     "test": "react-app-rewired test --env=jest-environment-jsdom-sixteen",
     "eject": "react-app-rewired eject"
   },

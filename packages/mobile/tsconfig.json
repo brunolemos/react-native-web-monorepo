@@ -1,13 +1,17 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
     "noEmit": true,
-    "typeRoots": ["@types", "../../node_modules/@types"]
+    "jsx": "preserve"
   },
-  "include": ["index.js", "src"],
-  "references": [
-    {
-      "path": "../components"
-    }
-  ]
+  "include": [
+    "__tests__",
+    "*.js",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
 }

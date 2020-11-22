@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "compile": "tsc -b --incremental",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile -- -w\" \"react-native start\"",
+    "start": "react-native start",
     "studio": "studio android",
     "test": "jest",
     "xcode": "open ios/myprojectname.xcworkspace"

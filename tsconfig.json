@@ -1,6 +1,5 @@
 {
   "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "noEmit": true
-  }
+  "include": [".prettierrc.js", "**/*.js", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
