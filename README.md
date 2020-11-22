@@ -8,7 +8,7 @@ This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-
 
 ### How to run
 
-_Requirements: [React Native](https://reactnative.dev/docs/environment-setup) (last tested on react-native@0.63.x)_
+_Requirements: [React Native](https://reactnative.dev/docs/environment-setup) (last tested on react-native@0.63)_
 
 - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
 - `$ cd react-native-web-monorepo`
@@ -29,17 +29,12 @@ _Requirements: [React Native](https://reactnative.dev/docs/environment-setup) (l
     - _You may need to launch your device emulator before the next command_
     - `$ yarn android` or `$ yarn ios`
 
-<br/>
-
 ## Who is using this on production
 
-Check out [DevHub](https://github.com/devhubapp/devhub).
-The main difference is that it supports Desktop (Electron) in addition to Web, iOS and Android.
-
-<br/>
+Hundreds of people are using this on production. You can check [DevHub](https://github.com/devhubapp/devhub), which is the project that inspired this repository.
 
 ### Author
 
 Follow me on Twitter: [@brunolemos](https://twitter.com/brunolemos)<br/>
 
-<a href="https://twitter.com/brunolemos" target="_blank"><img src="https://github.com/brunolemos.png?size=100" height="100" /></a>
+<a href="https://twitter.com/brunolemos" target="_blank"><img src="https://github.com/brunolemos.png?size=500" height="100" /></a>
