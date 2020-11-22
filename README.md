@@ -8,7 +8,7 @@ This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-
 
 ### How to run
 
-_Requirements: [React Native](https://reactnative.dev/docs/environment-setup) (last tested on react-native@0.63)_
+_Tech Stack: React Native 0.63, Next.js v10 & Create React App v4_
 
 - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
 - `$ cd react-native-web-monorepo`
@@ -16,7 +16,7 @@ _Requirements: [React Native](https://reactnative.dev/docs/environment-setup) (l
 - `$ cd packages/mobile/ios`
 - `$ pod install`
 - `$ cd -`
-- `$ yarn workspace web start`
+- `$ yarn workspace web-cra start` or `$ yarn workspace web-nextjs dev`
 - `$ yarn workspace mobile start`
 - Run the project
   - [iOS] Via Xcode
