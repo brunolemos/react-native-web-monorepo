@@ -15,17 +15,17 @@
   },
   "dependencies": {
     "components": "0.0.1",
-    "react": "16.12.0",
-    "react-native": "0.61.5"
+    "react": "16.3.1",
+    "react-native": "0.63.3"
   },
   "devDependencies": {
-    "@react-native-community/eslint-config": "0.0.7",
     "@testing-library/jest-native": "3.4.3",
     "@testing-library/react-native": "7.1.0",
     "@types/react": "16.9.19",
-    "@types/react-native": "0.61.12",
+    "@types/react-native": "0.63.36",
     "eslint": "6.8.0",
-    "react-test-renderer": "16.12.0",
+    "metro-react-native-babel-preset": "0.64.0",
+    "react-test-renderer": "16.3.1",
     "typescript": "4.1.2"
   },
   "jest": {
