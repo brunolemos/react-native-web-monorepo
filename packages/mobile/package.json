@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "concurrently \"yarn start\" \"react-native run-android --no-packager\"",
+    "ios": "concurrently \"yarn start\" \"react-native run-ios --no-packager\"",
     "lint": "eslint .",
     "start": "react-native start",
     "studio": "studio android",
@@ -21,6 +21,7 @@
     "@testing-library/react-native": "7.1.0",
     "@types/react": "16.9.19",
     "@types/react-native": "0.63.36",
+    "concurrently": "5.3.0",
     "eslint": "6.8.0",
     "metro-react-native-babel-preset": "0.64.0",
     "react-test-renderer": "17.0.1",
