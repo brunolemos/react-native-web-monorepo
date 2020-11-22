@@ -103,4 +103,6 @@ const styles = StyleSheet.create({
   },
 })
 
-declare var global: any
+declare let global: {
+  HermesInternal?: boolean
+}
