@@ -4,11 +4,11 @@
 
 This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-100-code-sharing-between-ios-android--web-using-react-native-web-andmonorepo-4pej).
 
+Tech Stack: React Native 0.63, Next.js v10 & Create React App v4
+
 ![article-cover](https://user-images.githubusercontent.com/619186/64933790-1fc27680-d81d-11e9-8077-64a1066b7c17.png)
 
 ### How to run
-
-_Tech Stack: React Native 0.63, Next.js v10 & Create React App v4_
 
 - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
 - `$ cd react-native-web-monorepo`
@@ -16,9 +16,11 @@ _Tech Stack: React Native 0.63, Next.js v10 & Create React App v4_
 - `$ cd packages/mobile/ios`
 - `$ pod install`
 - `$ cd -`
-- `$ yarn workspace web-cra start` or `$ yarn workspace web-nextjs dev`
-- `$ yarn workspace mobile start`
-- Run the project
+- Web
+  - [CRA] `$ yarn workspace web-cra start`
+  - [Next.js] `$ yarn workspace web-nextjs dev`
+- Mobile
+  - `$ yarn workspace mobile start`
   - [iOS] Via Xcode
     - `yarn xcode` (open the project on Xcode)
     - Press the Run button
@@ -31,7 +33,7 @@ _Tech Stack: React Native 0.63, Next.js v10 & Create React App v4_
 
 ## Who is using this on production
 
-Hundreds of people are using this on production. You can check [DevHub](https://github.com/devhubapp/devhub), which is the project that inspired this repository.
+Check out [DevHub](https://github.com/devhubapp/devhub), which is the project that inspired this repository.
 
 ### Author
 
