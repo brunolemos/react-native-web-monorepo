@@ -17,7 +17,7 @@
     "prebuild": "npm run compile",
     "build": "react-app-rewired build",
     "pretest": "npm run compile",
-    "test": "react-app-rewired test",
+    "test": "react-app-rewired test --env=jest-environment-jsdom-sixteen",
     "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
@@ -30,11 +30,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "babel-plugin-module-resolver": "^3.2.0",
+    "@testing-library/jest-dom": "5.11.6",
+    "@testing-library/react": "11.2.2",
     "babel-plugin-react-native-web": "0.12.1",
     "concurrently": "5.1.0",
+    "jest-environment-jsdom-sixteen": "1.0.3",
     "react-app-rewired": "2.1.5",
     "typescript": "4.1.2"
   },
