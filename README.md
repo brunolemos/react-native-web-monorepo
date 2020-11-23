@@ -4,7 +4,8 @@
 
 This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-100-code-sharing-between-ios-android--web-using-react-native-web-andmonorepo-4pej).
 
-Tech Stack: React Native 0.63, Next.js v10 & Create React App v4
+Tech Stack: TypeScript v4, React Native v0.63, Next.js v10 & Create React App v4.
+Prettier and ESLint are also configured as pre-commit hooks.
 
 ![article-cover](https://user-images.githubusercontent.com/619186/64933790-1fc27680-d81d-11e9-8077-64a1066b7c17.png)
 
@@ -13,23 +14,25 @@ Tech Stack: React Native 0.63, Next.js v10 & Create React App v4
 - `$ git clone git@github.com:brunolemos/react-native-web-monorepo.git`
 - `$ cd react-native-web-monorepo`
 - `$ yarn`
-- `$ cd packages/mobile/ios`
-- `$ pod install`
-- `$ cd -`
 - Web
   - [CRA] `$ yarn workspace web-cra start`
   - [Next.js] `$ yarn workspace web-nextjs dev`
 - Mobile
-  - `$ yarn workspace mobile start`
-  - [iOS] Via Xcode
-    - `yarn xcode` (open the project on Xcode)
-    - Press the Run button
-  - [Android] Via Android Studio
-    - `yarn studio` (open the project on Android Studio)
-    - Press the Run button
-  - Via CLI
-    - _You may need to launch your device emulator before the next command_
-    - `$ yarn android` or `$ yarn ios`
+  - [iOS]
+    - `$ cd packages/mobile/ios && pod update && pod install && cd -`
+    - [CLI]
+      - `$ yarn ios`
+    - [Xcode]
+      - `$ yarn workspace mobile start`
+      - `yarn xcode`
+      - Press the Run button
+  - [Android]
+    - [CLI]
+      - `$ yarn android`
+    - [Android Studio]
+      - `$ yarn workspace mobile start`
+      - `yarn studio`
+      - Press the Run button
 
 ## Who is using this on production
 
