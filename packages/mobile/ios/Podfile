@@ -13,6 +13,10 @@ target 'myprojectname' do
     # Pods for testing
   end
 
+  pre_install do |installer|
+    codegen_pre_install(installer, :path => config[:reactNativePath])
+  end
+
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
@@ -20,14 +24,5 @@ target 'myprojectname' do
   use_flipper!
   post_install do |installer|
     flipper_post_install(installer)
-  end
-end
-
-target 'myprojectname-tvOS' do
-  # Pods for myprojectname-tvOS
-
-  target 'myprojectname-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
   end
 end

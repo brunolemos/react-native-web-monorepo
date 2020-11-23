@@ -4,7 +4,7 @@
 
 This is the source code from [this tutorial](https://dev.to/brunolemos/tutorial-100-code-sharing-between-ios-android--web-using-react-native-web-andmonorepo-4pej).
 
-Tech Stack: TypeScript v4, React Native v0.63, Next.js v10 & Create React App v4.
+Tech Stack: TypeScript v4, React Native v0.64, Next.js v10 & Create React App v4.
 Prettier and ESLint are also configured as pre-commit hooks.
 
 ![article-cover](https://user-images.githubusercontent.com/619186/64933790-1fc27680-d81d-11e9-8077-64a1066b7c17.png)
