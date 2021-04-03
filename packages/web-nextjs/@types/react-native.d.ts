@@ -1,3 +1,5 @@
+import * as ReactNative from 'react-native'
+
 declare module 'react-native' {
   namespace AppRegistry {
     function registerComponent(
